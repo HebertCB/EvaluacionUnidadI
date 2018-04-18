@@ -1,20 +1,93 @@
-nav{
-	margin: 1rem 0;
-}
-
-article img{
-	max-width: 20rem;
-}
-
-article p{
-	padding: 10px;
-}
-
-article{	
-	padding: 1em;
-	margin-bottom: 1em;
-}
+/* G E N E R A L */
 
 #busqueda{
 	margin-bottom: 1em;
+}
+
+#comentario{
+	margin: 1em 0em;
+}
+
+@media (min-width: 768px) { 
+	article img{
+		max-width: 20rem;
+	}	
+}
+
+@media (max-width: 512px) {
+	#logos{
+		width: 100%;
+	}
+	/*#cabezera .fa-3x{
+		font-size: 2em;
+	}*/
+}
+
+/* D I S E Ñ O */
+
+body{
+    background-color: #111111;
+}
+
+#sociales{
+	color: #E31937;
+}
+
+nav{
+	background-color: transparent;
+	margin-bottom: .75rem;	
+    border: solid white;
+    border-width: 1px 0px;
+}
+
+nav #menub{
+	border-radius: 0;
+	border-width: 0 1px 0 0;
+	border-color: white;
+}
+
+nav .nav-pills .nav-link {
+	border-radius: 0;
+    color: white;
+}
+
+nav .nav-pills .nav-link:hover{
+	color: #E31937;	
+    border-width: 1px 0px;
+    transition: all .2s ease;
+}
+
+section article{
+	color: white;
+	border: solid #E31937;
+	border-width: 0 0 0 5px; 
+	background: transparent;
+	padding: 1em;
+	border-radius: 0 .25rem .25rem 0;
+}
+
+#lista a{	
+	border-color: #111111;
+	background-color: #E31937;
+	color: white;
+}
+
+#lista a:hover{	
+	border-color: #111111;
+	background-color: #cf1732;
+}
+
+#busqueda button{
+	border-color: #E31937;	
+	color: #E31937;
+	margin-top: .5rem;
+}
+
+#busqueda button:hover{
+	background-color: #E31937;
+	color: white;
+}
+
+#busqueda button:focus{
+	box-shadow: 0 0 0 0.2rem rgb(227,25,55,.4);
 }

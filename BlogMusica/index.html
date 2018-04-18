@@ -10,62 +10,88 @@
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<header>
-		<div class="container bg-light">
-			<img src="img/logo.png" alt="" width="200px">
-			<div class="buttonbar fa-3x float-right">
-				<i class="fa fa-youtube-square"></i>
-				<i class="fa fa-facebook-square"></i>
-				<i class="fa fa-instagram"></i>
-				<i class="fa fa-pinterest-square"></i>
-				<i class="fa fa-twitter-square"></i>
+	<header id="cabezera">
+		<div class="container">
+			<div class="row text-center justify-content-between">
+				<div class="col-lg-auto">
+					<img src="img/logo.png" width="450px" id="logos" alt="">
+				</div>
+				<div class="fa-3x col-lg-auto mt-auto" id="sociales">
+					<i class="fa fa-youtube-square"></i>
+					<i class="fa fa-facebook-square"></i>
+					<i class="fa fa-instagram"></i>
+					<i class="fa fa-pinterest-square"></i>
+					<i class="fa fa-twitter-square"></i>
+				</div>
 			</div>
 
-			<nav class="navbar-light navbar-expand-lg">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+			<nav class="navbar-dark navbar-expand-lg">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation" id="menub">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="nav-pills nav-fill collapse navbar-collapse" id="menu">
-					<a class="nav-item nav-link active" href="#">Inicio</a>
-					<a class="nav-item nav-link" href="#">Categorías</a></li>
-					<a class="nav-item nav-link" href="#">Servicios</a></li>
-					<a class="nav-item nav-link" href="#">Contáctenos</a></li>
+				<div class="nav-pills nav-fill collapse navbar-collapse" id="menu">		
+					<a class="nav-item nav-link" href="#" data-toggle="pill">Inicio</a>
+					<a class="nav-item nav-link" href="#" data-toggle="pill">Categorías</a></li>
+					<a class="nav-item nav-link" href="#" data-toggle="pill">Servicios</a></li>
+					<a class="nav-item nav-link" href="#" data-toggle="pill">Contáctenos</a></li>
 				</div>
 			</nav>			
 		</div>
 	</header>
 
-	<div class="container bg-light">
+	<div class="container">
 		<div class="row">
-			<section class="col-md-8 col-12">
-				<article class="bg-info clearfix">
-					<h3>Tributo a THe Beatles</h3>					
-					<img src="https://www.elheraldo.co/sites/default/files/styles/width_860/public/articulo/2017/04/04/the-beatles-1965-bw-billboard-1548.jpg" class="float-right" alt=""/>
-					<p>La Orquesta Filarmónica de Medellín celebrará la carrera musical de la agrupación británica The Beatles, quienes marcaron la historia del rock durante la década de los 60s y 70s, durante esta velada la Orquesta estará acompañada por Claudia Gómez (voz y guitarra) y Julián Cardona (guitarra), bajo la dirección de Gonzalo Ospina.</p>
+			<section class="col-lg-8 col-12">
+				<article class="clearfix">					
+					<div class="float-right p-1" id="imagen">			
+						<img src="https://www.elheraldo.co/sites/default/files/styles/width_860/public/articulo/2017/04/04/the-beatles-1965-bw-billboard-1548.jpg" class="w-100 rounded" alt=""/>
+					</div>
+					<div>
+						<h3>Tributo a The Beatles</h3>
+						<p>La Orquesta Filarmónica de Medellín celebrará la carrera musical de la agrupación británica The Beatles, quienes marcaron la historia del rock durante la década de los 60s y 70s, durante esta velada la Orquesta estará acompañada por Claudia Gómez (voz y guitarra) y Julián Cardona (guitarra), bajo la dirección de Gonzalo Ospina.</p>
+					</div>	
 				</article>
-				<article class="bg-info clearfix">
-					<h3>Navegación por los planetas</h3>
+				<div class="form-inline" id="comentario">
+					<i class="fa fa-user fa-2x text-white" style="padding-left: 15px"></i>
+					<div class="col">
+						<textarea rows="1" class="form-control col w-100"></textarea>
+					</div>
+				</div>
 
-					<img src="http://conceptodefinicion.de/wp-content/uploads/2014/03/sistemasolar.jpg" class="float-left" alt=""/>
-					<p>Pilotado en vivo y con un selecto programa musical de la Orquesta Filarmónica de Medellín, el Planetario invita este martes 26 de mayo, a las 6:30 p.m., a un gran espectáculo de música y astronomía, al aire libre y con entrada gratuita.</p>
+				<article class="clearfix">					
+					<div class="float-right p-1" id="imagen">			
+						<img src="http://conceptodefinicion.de/wp-content/uploads/2014/03/sistemasolar.jpg" class="w-100 rounded" alt=""/>
+					</div>
+					<div>
+						<h3>Navegación por los planetas</h3>
+						<p>Pilotado en vivo y con un selecto programa musical de la Orquesta Filarmónica de Medellín, el Planetario invita este martes 26 de mayo, a las 6:30 p.m., a un gran espectáculo de música y astronomía, al aire libre y con entrada gratuita.</p>
+					</div>	
 				</article>
+				<div class="form-inline" id="comentario">
+					<i class="fa fa-user fa-2x text-white" style="padding-left: 15px"></i>
+					<div class="col">
+						<textarea rows="1" class="form-control col w-100"></textarea>
+					</div>
+				</div>
 			</section>
 
-			<section class="col-md-4">
+			<section class="col-lg-4">
 				<div id="busqueda">
 					<input class="form-control mr-sm-2" type="search" placeholder="&#xF002;" aria-label="Search" style="font-family:Arial, FontAwesome">
-					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search
-					</button>
+					<button class="btn btn-outline-success" type="submit">Search</button>
 				</div>
-				<div class="lista-boton">
-					<a href="#" class="btn btn-dark btn-block">Cras justo odio</a>
-					<a href="#" class="btn btn-dark btn-block">Cras justo odio</a>
-					<a href="#" class="btn btn-dark btn-block">Cras justo odio</a>
-					<a href="#" class="btn btn-dark btn-block">Cras justo odio</a>
-					<a href="#" class="btn btn-dark btn-block">Cras justo odio</a>
-					<a href="#" class="btn btn-dark btn-block">Cras justo odio</a>
-					<a href="#" class="btn btn-dark btn-block">Cras justo odio</a>
-					<a href="#" class="btn btn-dark btn-block">Cras justo odio</a>
+				<div class="list-group mb-3" id="lista">
+					<a href="#" class="list-group-item list-group-item-action">
+						Cras justo odio
+					</a>
+					<a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+					<a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+					<a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+					<a href="#" class="list-group-item list-group-item-action">Vestibulum at eros</a>
+					<a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+					<a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+					<a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+					<a href="#" class="list-group-item list-group-item-action">Vestibulum at eros</a>
 				</div>
 			</section>
 		</div>		
