@@ -1,0 +1,34 @@
+/* G E N E R A L */
+
+#favs img{
+	width: 100%;
+}
+
+/* D I S E Ñ O */
+
+header:after{	
+	background: rgba(0,0,255, 0.5);
+}
+
+header{
+	background: url(https://image.freepik.com/foto-gratis/fondo-de-alimentos-concepto-de-alimentos-con-varios-sabrosos-ingredientes-frescos-para-cocinar-ingredientes-italianos-de-la-comida-vista-desde-arriba-con-espacio-de-copia_1220-1363.jpg);
+	opacity: 0.5;
+	/*background-color: #4abdac;*/
+}
+
+#sidebar{
+	/*background-color: #fc4a1a;*/
+	background-color: #dfdce3;
+}
+
+section article{
+	padding: 1em;
+	background-color: #f7b733;
+	margin-bottom: 1rem;
+}
+
+/*@media (min-width: 768px) { 
+	article img{
+		max-width: 20rem;
+	}	
+}*/

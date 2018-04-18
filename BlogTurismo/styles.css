@@ -1,0 +1,71 @@
+/* G E N E R A L */
+
+body{
+	/*background-image: url("http://images.all-free-download.com/images/graphiclarge/brazil_flag_concept_colorful_background_illustration_6820118.jpg");*/
+}
+
+#sociales i{
+	display: block;
+}
+
+.masonry-img{
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+}
+
+#img1{
+	background-image: url(https://imaginariodejaneiro.com/wp-content/uploads/2014/03/cristo-redentor-corcovado-rio-de-janeiro.jpg);
+	height: 50%;
+}
+
+#img2{
+	background-image: url(http://media.staticontent.com/media/pictures/92b4f1bb-8cd6-4834-859e-751a0df7604c/577x330);
+	height: 50%;
+}
+
+#img3{
+	background-image: url(https://www.turismobr.com/wp-content/uploads/2016/12/catedral-de-brasilia-1-1024x678.jpg);
+	height: 100%;
+}
+
+#img4{
+	background-image: url("https://www.turismobr.com/wp-content/uploads/2011/01/rio-de-janeiro-14330.jpg");
+	height: 60%;
+}
+
+#img5{
+ 	background-image: url("http://www.diariodecultura.com.ar/wp-content/uploads/2017/07/copacabana.jpg");
+ 	height: 40%;
+}
+
+/* D I S E Ñ O */
+
+#menu a{
+	border: solid 1px black;
+	margin: 0 .2em;
+	color: black;
+}
+
+#sociales{
+	color: #ffa31a;
+	background-color: green;
+	padding: .5rem .5rem;
+}
+
+#masonry{
+	height: 30rem;
+}
+
+section article{
+	padding: 1em;
+	background-color: #ff9900;
+	margin-bottom: 1rem;
+}
+
+
+@media (min-width: 768px) { 
+	article img{
+		max-width: 20rem;
+	}	
+}

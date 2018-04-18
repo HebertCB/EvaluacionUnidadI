@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Blog de gastronomía</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header class="mb-2">
+		<div class="container">
+			<h1>Sazón y Sabor</h1>
+			<h4 class="mb-0 pb-2">Cocina en casa</h4>
+		</div>
+	</header>
+
+	<section>
+		<div class="container">
+			<div class="row no-gutters">
+				<seccion class="col-lg-4">
+					<div class="rounded p-3 mr-2" id="sidebar">				
+						<div id="busqueda">
+							<input class="form-control mr-sm-2" type="search" placeholder="&#xF002;" aria-label="Search" style="font-family:Arial, FontAwesome">
+							<button class="btn btn-outline-success" type="submit">Search</button>
+						</div>
+						<nav class="nav flex-column">
+							<a class="nav-link active" href="#">Inicio</a>
+							<a class="nav-link" href="#">Plato perfecto</a>
+							<a class="nav-link" href="#">Recetas</a>
+							<a class="nav-link" href="#">Favoritos:</a>
+						</nav>
+						<div class="row no-gutters" id="favs">
+							<div class="col-sm-4">
+								<img src="https://www.jamear.com/wp-content/uploads/2017/02/seamkT9FGWXvo9GpHM63n5up.jpeg" alt="">
+							</div>
+							<div class="col-sm-4">
+								<img src="https://2.bp.blogspot.com/-ugVALPa1MCM/Wb2WgCL_bTI/AAAAAAAAKVo/v7bg0D85bfktoDIkneNk153V4sdzvM4SwCLcBGAs/s1600/rocoto-relleno.jpg" alt="">
+							</div>
+							<div class="col-sm-4">
+								<img src="https://recetasdecomidaperuana.org/wp-content/uploads/2010/03/lomo-saltado.jpg" alt="">
+							</div>
+							<div class="col-sm-4">
+								<img src="http://www.officialteamlift.com/wp-content/uploads/2017/03/Arroz_chaufa_2.jpg" alt="">
+							</div>
+							<div class="col-sm-4">
+								<img src="https://t1.rg.ltmcdn.com/es/images/6/1/1/img_papas_a_la_huancaina_peruanas_32116_600.jpg" alt="">
+							</div>
+							<div class="col-sm-4">
+								<img src="http://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2016/08/spaguetti.jpg" alt="">
+							</div>
+						</div>
+						<a class="nav-link" href="#">Historial</a>
+						<div class="list-group mb-3" id="lista">
+							<a href="#" class="list-group-item list-group-item-action">Cras justo odio</a>
+							<a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+							<a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+							<a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+							<a href="#" class="list-group-item list-group-item-action">Vestibulum at eros</a>
+							<a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+							<a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+							<a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+							<a href="#" class="list-group-item list-group-item-action">Vestibulum at eros</a>
+						</div>
+					</div>
+				</seccion>
+
+				<section class="col-lg-8">
+					<article class="clearfix rounded">						
+						<h3>Causa limeña</h3>
+						<span class="font-weight-bold">lunes, 15 de febrero de 2016, 0 comentarios</span>				
+						<div class="float-right p-1" id="imagen">			
+							<img src="https://www.jamear.com/wp-content/uploads/2017/02/seamkT9FGWXvo9GpHM63n5up.jpeg" class="w-100 rounded" alt=""/>
+						</div>
+						<div>
+							<p>Es un plato muy antiguo que tiene como protagonista la papa amarilla, conocida en algunos lugares como papa andina, y el archifamoso y delicioso ají amarillo peruano.
+							El relleno de la causa limeña se hace generalmente de atún o de pollo. Aunque también puedes conseguir algunas que sean de cangrejo, camarones y de otros tipos de pescado.</p>
+						</div>
+						<div class="form-inline" id="comentario">
+							<i class="fa fa-user fa-2x" style="padding-left: 15px"></i>
+							<div class="col">
+								<textarea rows="1" class="form-control col w-100"></textarea>
+							</div>
+						</div>	
+					</article>	
+					<article class="clearfix rounded">
+						<h3>Cataratas del Iguazú</h3>
+						<span class="font-weight-bold">lunes, 15 de febrero de 2016, 0 comentarios</span>			
+						<div class="p-1" id="imagen">			
+							<img src="https://recetasdecomidaperuana.org/wp-content/uploads/2010/03/lomo-saltado.jpg" class="w-100 rounded" alt=""/>
+						</div>
+						<div>
+							<p>Se encuentra dentro de la reserva forestal del parque nacional de Iguazú. Consideradas como una de las maravillas naturales de nuestro planeta, diariamente son visitadas por turistas de todo el mundo que quedan maravillados ante tanta belleza. El río Iguazú, que tiene una anchura de aproximadamente 4 km. de ancho, se hace más angosto, caen 275 cataratas, muchas de las cuales superan los 100 mts. de altura.ación.</p>
+						</div>	
+						<div class="form-inline" id="comentario">
+							<i class="fa fa-user fa-2x" style="padding-left: 15px"></i>
+							<div class="col">
+								<textarea rows="1" class="form-control col w-100"></textarea>
+							</div>
+						</div>						
+					</article>
+				</section>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+</html>
