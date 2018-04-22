@@ -41,12 +41,6 @@ section article{
 	margin-bottom: 1rem;
 }
 
-/*@media (min-width: 768px) { 
-	article img{
-		max-width: 20rem;
-	}	
-}*/
-
 #favs {	
 	height: 15rem;
 }
@@ -73,4 +67,18 @@ section article{
 }
 #img6{
 	background-image: url(http://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2016/08/spaguetti.jpg);
+}
+
+@media (max-width: 767px) {
+	#sidebar{
+		position: absolute;
+		width: 100%;
+		z-index: 1;
+	}
+	#temas{
+		margin-top: 60px;
+	}
+	#favs {	
+		height: 20rem;
+	}
 }
