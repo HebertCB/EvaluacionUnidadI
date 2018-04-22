@@ -1,4 +1,7 @@
 /* G E N E R A L */
+body{
+}
+
 
 #favs img{
 	width: 100%;
@@ -6,14 +9,25 @@
 
 /* D I S E Ñ O */
 
-header:after{	
-	background: rgba(0,0,255, 0.5);
-}
+/*header::after{	
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;	
+	background: rgba(191,4,17,0.8);
+	z-index: -1;
+}*/
 
 header{
-	background: url(https://image.freepik.com/foto-gratis/fondo-de-alimentos-concepto-de-alimentos-con-varios-sabrosos-ingredientes-frescos-para-cocinar-ingredientes-italianos-de-la-comida-vista-desde-arriba-con-espacio-de-copia_1220-1363.jpg);
-	opacity: 0.5;
-	/*background-color: #4abdac;*/
+	/*background: url(https://image.freepik.com/foto-gratis/fondo-de-alimentos-concepto-de-alimentos-con-varios-sabrosos-ingredientes-frescos-para-cocinar-ingredientes-italianos-de-la-comida-vista-desde-arriba-con-espacio-de-copia_1220-1363.jpg);*/
+	/*background-image: url(https://thumbs.dreamstime.com/b/comida-del-vector-y-fondo-incons%C3%BAtil-de-las-bebidas-45072557.jpg);*/
+	position: relative;
+	color: white;
+	background-size: 30%;
+	z-index: 1;
+	background-color: #bf0411;
 }
 
 #sidebar{
@@ -32,3 +46,31 @@ section article{
 		max-width: 20rem;
 	}	
 }*/
+
+#favs {	
+	height: 15rem;
+}
+
+#favs div{		
+	background-size: cover;
+	background-position: center;
+}
+
+#img1{
+	background-image: url(https://www.jamear.com/wp-content/uploads/2017/02/seamkT9FGWXvo9GpHM63n5up.jpeg);
+}
+#img2{
+	background-image: url(https://2.bp.blogspot.com/-ugVALPa1MCM/Wb2WgCL_bTI/AAAAAAAAKVo/v7bg0D85bfktoDIkneNk153V4sdzvM4SwCLcBGAs/s1600/rocoto-relleno.jpg);
+}
+#img3{
+	background-image: url(https://recetasdecomidaperuana.org/wp-content/uploads/2010/03/lomo-saltado.jpg);
+}
+#img4{
+	background-image: url(http://www.officialteamlift.com/wp-content/uploads/2017/03/Arroz_chaufa_2.jpg);
+}
+#img5{
+	background-image: url(https://t1.rg.ltmcdn.com/es/images/6/1/1/img_papas_a_la_huancaina_peruanas_32116_600.jpg);
+}
+#img6{
+	background-image: url(http://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2016/08/spaguetti.jpg);
+}

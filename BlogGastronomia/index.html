@@ -13,7 +13,7 @@
 	<header class="mb-2">
 		<div class="container">
 			<h1>Sazón y Sabor</h1>
-			<h4 class="mb-0 pb-2">Cocina en casa</h4>
+			<h4 class="mb-0 pb-2">Lo mejor de la cocina peruana</h4>
 		</div>
 	</header>
 
@@ -21,39 +21,48 @@
 		<div class="container">
 			<div class="row no-gutters">
 				<seccion class="col-lg-4">
-					<div class="rounded p-3 mr-2" id="sidebar">				
-						<div id="busqueda">
-							<input class="form-control mr-sm-2" type="search" placeholder="&#xF002;" aria-label="Search" style="font-family:Arial, FontAwesome">
-							<button class="btn btn-outline-success" type="submit">Search</button>
-						</div>
-						<nav class="nav flex-column">
-							<a class="nav-link active" href="#">Inicio</a>
-							<a class="nav-link" href="#">Plato perfecto</a>
-							<a class="nav-link" href="#">Recetas</a>
-							<a class="nav-link" href="#">Favoritos:</a>
-						</nav>
+					<div class="rounded p-3 mr-lg-2" id="sidebar">	
+						<div class="d-flex flex-column">
+							<nav class="navbar-dark navbar-expand-lg order-lg-2">
+								<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation" id="menub">
+									<span class="navbar-toggler-icon"></span>
+								</button>
+								<div class="collapse d-lg-block" id="menu">		
+									<a class="nav-item nav-link" href="#">Inicio</a>
+									<a class="nav-item nav-link" href="#">Plato perfecto</a>
+									<a class="nav-item nav-link" href="#">Recetas</a>
+								</div>
+							</nav>									
+							<div id="busqueda" class="order-lg-1">
+								<input class="form-control" type="search" placeholder="&#xF002;" aria-label="Search" style="font-family:Arial, FontAwesome">
+								<button class="btn btn-outline-success" type="submit">Search</button>
+							</div>	
+						</div>	
+
+						<a class="nav-item nav-link" href="#">Favoritos</a>
+
 						<div class="row no-gutters" id="favs">
-							<div class="col-sm-4">
-								<img src="https://www.jamear.com/wp-content/uploads/2017/02/seamkT9FGWXvo9GpHM63n5up.jpeg" alt="">
+							<div class="col-sm-4" id="img1">
+								<!-- <img src="https://www.jamear.com/wp-content/uploads/2017/02/seamkT9FGWXvo9GpHM63n5up.jpeg" alt=""> -->
 							</div>
-							<div class="col-sm-4">
-								<img src="https://2.bp.blogspot.com/-ugVALPa1MCM/Wb2WgCL_bTI/AAAAAAAAKVo/v7bg0D85bfktoDIkneNk153V4sdzvM4SwCLcBGAs/s1600/rocoto-relleno.jpg" alt="">
+							<div class="col-sm-4" id="img2">
+								<!-- <img src="https://2.bp.blogspot.com/-ugVALPa1MCM/Wb2WgCL_bTI/AAAAAAAAKVo/v7bg0D85bfktoDIkneNk153V4sdzvM4SwCLcBGAs/s1600/rocoto-relleno.jpg" alt=""> -->
 							</div>
-							<div class="col-sm-4">
-								<img src="https://recetasdecomidaperuana.org/wp-content/uploads/2010/03/lomo-saltado.jpg" alt="">
+							<div class="col-sm-4" id="img3">
+								<!-- <img src="https://recetasdecomidaperuana.org/wp-content/uploads/2010/03/lomo-saltado.jpg" alt=""> -->
 							</div>
-							<div class="col-sm-4">
-								<img src="http://www.officialteamlift.com/wp-content/uploads/2017/03/Arroz_chaufa_2.jpg" alt="">
+							<div class="col-sm-4" id="img4">
+								<!-- <img src="http://www.officialteamlift.com/wp-content/uploads/2017/03/Arroz_chaufa_2.jpg" alt=""> -->
 							</div>
-							<div class="col-sm-4">
-								<img src="https://t1.rg.ltmcdn.com/es/images/6/1/1/img_papas_a_la_huancaina_peruanas_32116_600.jpg" alt="">
+							<div class="col-sm-4" id="img5">
+								<!-- <img src="https://t1.rg.ltmcdn.com/es/images/6/1/1/img_papas_a_la_huancaina_peruanas_32116_600.jpg" alt=""> -->
 							</div>
-							<div class="col-sm-4">
-								<img src="http://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2016/08/spaguetti.jpg" alt="">
+							<div class="col-sm-4" id="img6">
+								<!-- <img src="http://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2016/08/spaguetti.jpg" alt=""> -->
 							</div>
 						</div>
 						<a class="nav-link" href="#">Historial</a>
-						<div class="list-group mb-3" id="lista">
+						<div class="list-group" id="lista">
 							<a href="#" class="list-group-item list-group-item-action">Cras justo odio</a>
 							<a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
 							<a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
