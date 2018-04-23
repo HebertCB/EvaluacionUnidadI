@@ -55,13 +55,13 @@ header{
 	background-color: #FECE00;
 }
 
-header .navbar-brand{	
-	text-shadow: 0px 1px 5px gray;
+#logo{
+	top: 5px;
 }
 
-#logo{
-	top: 0;
-	left: 0;
+.navbar h5{
+	top: 30%;
+	text-shadow: 0px 0px 1px gray;
 }
 
 #menu a, .navbar-toggler{
@@ -118,8 +118,8 @@ section article{
 	}
 }
 
-@media (max-width: 512px){
-	.navbar-brand p{
-		opacity: 0;
+@media (max-width: 515px){
+	.navbar h5{
+		display: none;
 	}
 }
