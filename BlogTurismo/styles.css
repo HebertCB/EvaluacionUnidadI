@@ -1,11 +1,17 @@
 /* G E N E R A L */
 
 body{
-	/*background-image: url("http://images.all-free-download.com/images/graphiclarge/brazil_flag_concept_colorful_background_illustration_6820118.jpg");*/
+	background-image: url("http://images.all-free-download.com/images/graphiclarge/brazil_flag_concept_colorful_background_illustration_6820118.jpg");
 }
 
 #sociales i{
 	display: block;
+}
+
+#masonry{
+	height: 100vh;
+	padding-top: 3rem;
+	margin-bottom: 1rem;
 }
 
 .masonry-img{
@@ -15,12 +21,12 @@ body{
 }
 
 #img1{
-	background-image: url(https://imaginariodejaneiro.com/wp-content/uploads/2014/03/cristo-redentor-corcovado-rio-de-janeiro.jpg);
+	background-image: url(http://media.staticontent.com/media/pictures/92b4f1bb-8cd6-4834-859e-751a0df7604c/577x330);
 	height: 50%;
 }
 
 #img2{
-	background-image: url(http://media.staticontent.com/media/pictures/92b4f1bb-8cd6-4834-859e-751a0df7604c/577x330);
+	background-image: url(https://imaginariodejaneiro.com/wp-content/uploads/2014/03/cristo-redentor-corcovado-rio-de-janeiro.jpg);
 	height: 50%;
 }
 
@@ -35,37 +41,70 @@ body{
 }
 
 #img5{
- 	background-image: url("http://www.diariodecultura.com.ar/wp-content/uploads/2017/07/copacabana.jpg");
- 	height: 40%;
+	background-image: url("http://www.diariodecultura.com.ar/wp-content/uploads/2017/07/copacabana.jpg");
+	height: 40%;
 }
 
 /* D I S E Ñ O */
 
-#menu a{
-	border: solid 1px black;
-	margin: 0 .2em;
+header{
+	z-index: 1;
+	top: 0;
+	right: 0;
+	left: 0;
+}
+
+#logo{
+	top: 0;
+	left: 0;
+	margin-top: -8px;
+}
+
+#menu a, .navbar-toggler{
+	margin-left: .25rem;
+	background-color: green;
+	color: white;	
+	padding: .8rem 1rem;
+}
+
+#menu a:hover{
+	background-color: lightgreen;
 	color: black;
+	transition: all ease .2s;
 }
 
 #sociales{
-	color: #ffa31a;
-	background-color: green;
+	/*color: #ffa31a;*/
+	color: white;
+	background-color: #ffa31a;
 	padding: .5rem .5rem;
-}
+	top: 30%;
+	box-shadow: 0px 0px 5px black;
 
-#masonry{
-	height: 30rem;
 }
 
 section article{
 	padding: 1em;
-	background-color: #ff9900;
+	background-color: white;
 	margin-bottom: 1rem;
+	box-shadow: 0px 0px 10px black;
 }
+
+
 
 
 @media (min-width: 768px) { 
 	article img{
 		max-width: 20rem;
-	}	
+	}
+}
+
+@media (max-width: 991px){
+	#menu a{
+		background-color: transparent;
+		color: green;
+		z-index: -1;
+		border-color: green;
+		border-width: 0px 0px 1px 0px;
+	}
 }

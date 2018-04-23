@@ -6,61 +6,58 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous"> -->
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<header>
-		<div class="container bg-light">
-			<div class="row justify-content-between pt-2">
-				<div class="col-lg-auto text-center">
-					<img src="img/logo.png" width="250px" id="logos" alt="">
-					<spam class="align-bottom py-1">Simplemente Sensacional</span> <!--  style="height: 100%;" -->
-				</div>
-				<nav class="navbar-light navbar-expand-lg col-lg-auto">
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation" id="menub">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="nav-pills nav-fill collapse navbar-collapse" id="menu">		
-						<a class="nav-item nav-link" href="#">Inicio</a>
-						<a class="nav-item nav-link" href="#">Viajes</a>
-						<a class="nav-item nav-link" href="#">Servicios</a>
-						<a class="nav-item nav-link" href="#">Recomendaciones</a>
-					</div>
-				</nav>
-			</div>		
-		</div>
-	</header>
+	<header class="navbar navbar-expand-lg navbar-dark bg-light position-fixed">
+		<div class="container">
+			<div class="navbar-brand text-dark position-relative" style="padding-left: 160px">
+				<img src="img/logo.png" class="position-absolute" id="logo" width="160px" alt="">
+				Simplemente Sensacional
+			</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="menu">
+				<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+					<a class="nav-item btn" href="#">Inicio</a>
+					<a class="nav-item btn" href="#">Viajes</a>
+					<a class="nav-item btn" href="#">Servicios</a>
+					<a class="nav-item btn" href="#">Recomendaciones</a>
+				</ul>
+			</div>
+		</div>		
+	</header>	
 
-	<div class="fa-3x float-left pl-3 rounded-right" id="sociales">		
-		<i class="fa fa-youtube-square"></i>
-		<i class="fa fa-facebook-square"></i>
-		<i class="fa fa-instagram"></i>
-		<i class="fa fa-pinterest-square"></i>
-		<i class="fa fa-twitter-square"></i>
-	</div>
-
-	<div class="container">
-		<div class="row no-gutters my-3" id="masonry">
-			<div class="col-lg-4">
+	<div class="fluid-container">
+		<div class="row no-gutters" id="masonry">
+			<div class="col-6 col-sm-4">
 				<div class="masonry-img" id="img1"></div>
 				<div class="masonry-img" id="img2"></div>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-6 col-sm-4">
 				<div class="masonry-img" id="img3"></div>
 			</div>
-			<div class="col-lg-4 col-sm-12">
+			<div class="col-12 col-sm-4">
 				<div class="masonry-img" id="img4"></div>
 				<div class="masonry-img" id="img5"></div>
 			</div>
 		</div>
 	</div>
 
+	<div class="fa-3x position-absolute pl-3 rounded-right" id="sociales">		
+		<i class="fa fa-youtube-square"></i>
+		<i class="fa fa-facebook-square"></i>
+		<i class="fa fa-instagram"></i>
+		<i class="fa fa-pinterest-square"></i>
+		<i class="fa fa-twitter-square"></i>
+	</div>
+	
 
 	<div class="container">
-		<div class="row">
+		<div class="row no-gutters">
 			<section class="col-lg-9 col-12">
-				<article class="clearfix rounded">					
+				<article class="clearfix">					
 					<div class="float-right p-1" id="imagen">			
 						<img src="https://imaginariodejaneiro.com/wp-content/uploads/2014/03/cristo-redentor-corcovado-rio-de-janeiro.jpg" class="w-100 rounded" alt=""/>
 					</div>
@@ -76,7 +73,7 @@
 						</div>
 					</div>	
 				</article>	
-				<article class="clearfix rounded">					
+				<article class="clearfix">					
 					<div class="float-right p-1" id="imagen">			
 						<img src="http://media.staticontent.com/media/pictures/92b4f1bb-8cd6-4834-859e-751a0df7604c/577x330" class="w-100 rounded" alt=""/>
 					</div>
@@ -95,84 +92,18 @@
 			</section>
 
 			<section class="col-lg-3">
-				<div class="text-center p-3 bg-light rounded">
+				<article class="text-center p-3 bg-light ml-2">
 					<h5>Perfil del autor</h5>
 					<img src="https://static.licdn.com/scds/common/u/images/themes/katy/ghosts/person/ghost_person_200x200_v1.png" class="rounded-circle" alt="" width="50%">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum dignissimos odit obcaecati ut aliquam velit similique? Soluta obcaecati rerum, non dolorum, itaque facilis vitae velit recusandae cupiditate vel necessitatibus numquam! Ipsum dignissimos odit obcaecati ut aliquam velit similique? Soluta obcaecati rerum, non dolorum, itaque facilis vitae velit recusandae cupiditate vel necessitatibus numquam!</p>
-				</div>
+				</article>
 			</section>
 		</div>
 	</div>
-		<!-- <div class="container">
-			<div class="card-columns">
-				<div class="card">
-					<img class="card-img-top" src="..." alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">Card title that wraps to a new line</h5>
-						<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-					</div>
-				</div>
-				<div class="card p-3">
-					<blockquote class="blockquote mb-0 card-body">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-						<footer class="blockquote-footer">
-							<small class="text-muted">
-								Someone famous in <cite title="Source Title">Source Title</cite>
-							</small>
-						</footer>
-					</blockquote>
-				</div>
-				<div class="card">
-					<img class="card-img-top" src="..." alt="Card image cap">
-					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-						<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-					</div>
-				</div>
-				<div class="card bg-primary text-white text-center p-3">
-					<blockquote class="blockquote mb-0">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
-						<footer class="blockquote-footer">
-							<small>
-								Someone famous in <cite title="Source Title">Source Title</cite>
-							</small>
-						</footer>
-					</blockquote>
-				</div>
-				<div class="card text-center">
-					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-						<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-					</div>
-				</div>
-				<div class="card">
-					<img class="card-img" src="..." alt="Card image">
-				</div>
-				<div class="card p-3 text-right">
-					<blockquote class="blockquote mb-0">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-						<footer class="blockquote-footer">
-							<small class="text-muted">
-								Someone famous in <cite title="Source Title">Source Title</cite>
-							</small>
-						</footer>
-					</blockquote>
-				</div>
-				<div class="card">
-					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-						<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-					</div>
-				</div>
-			</div>
-		</div> -->
+	
 
-
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>	
-	</body>
-	</html>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>	
+</body>
+</html>
